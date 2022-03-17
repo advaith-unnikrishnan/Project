@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  --black: #000;
+  --blue: #40A4FE;
+  --white: #fff;
+  --logo-color:#17CF97;
+  --secondary-color: #fdf6ec;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== Header Section ==== */
+header {
+  font-family: "Inter", sans-serif;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo > p {
+  font-size: 2.5rem;
+}
+/* ==== Navbar ==== */
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+nav > ul > li {
+  margin: 1rem;
+  font-weight: bold;
+}
+
+a {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.page-link:hover {
+  text-decoration: underline 0.25rem var(--blue);
+}
+
+.login-btn {
+  font-weight: bold;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.login-btn:hover {
+  color: var(--blue);
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+}
+
+.login-btn > a:hover {
+  text-decoration: none;
+}
+/* ==== Hero Section ==== */
+.hero {
+  display: flex;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.hero > img {
+  max-width: 45%;
+}
+
+.hero-description > h2 {
+  font-size: 3rem;
+}
+
+.hero-description > p {
+  margin: 2rem 0rem;
+  text-align: justify;
+  font-size: 1.75rem;
+}
+
+/* ==== Input Section ==== */
+.input{
+    text-align: center;
+    margin: 1rem;
+}
+
+.input > select{
+    border: 1px solid var(--logo-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.input > button{
+    margin: 0rem 1rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--logo-color);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+/* ==== Safe Location Section ==== */
+.safe-locations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.safe-locations > iframe{
+    margin: 1rem;
+}
+/* ==== Footer Section ==== */
+footer{
+    padding: 1rem;
+}
+footer > h4{
+    text-align: center;
+}
