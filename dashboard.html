@@ -6,36 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="icon" href="assets/img/logo.svg" />
+    <!-- Material CDN -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="assets/css/dashboard.css" />
   </head>
   <body>
     <!-- Dashboard Start -->
-    <div class="dashboard">
-      <!-- Navigation Start-->
-      <section class="navigattion">
-        <img src=" assets/img/logo.svg" alt="logo" />
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="assets/img/logo.svg" alt="Logo" />
+            <h2>JalaRaksha</h2>
+          </div>
 
-        <div>
-          <span class="material-icons-outlined"> dashboard </span>
-          <span class="material-icons-outlined"> timeline </span>
-          <span class="material-icons-outlined"> group </span>
-          <span class="material-icons-outlined"> insert_invitation </span>
-          <span class="material-icons-outlined"> settings </span>
+          <div class="class" id="close-btn">
+            <span class="material-icons-outlined"> close </span>
+          </div>
         </div>
-      </section>
-      <!-- Navigation End -->
 
-      <!-- Main Start -->
-      <section class="main"></section>
-      <!-- Main End -->
-
-      <!-- Secondary Start -->
-      <section class="secondary"></section>
-      <!-- Secondary End -->
+        <div class="sidebar">
+          <a href="#"
+            ><span class="material-icons-outlined"> dashboard </span>
+            <h3>Dashbaord</h3></a
+          >
+          <a href="#"
+            ><span class="material-icons-outlined"> admin_panel_settings </span>
+            <h3>Admin</h3></a
+          >
+          <a href="#"
+            ><span class="material-icons-outlined"> insights </span>
+            <h3>Insights</h3></a
+          >
+          <a href="#"
+            ><span class="material-icons-outlined"> settings </span>
+            <h3>Settings</h3></a
+          >
+          <a href="#"
+            ><span class="material-icons-outlined">
+                logout
+                </span>
+            <h3>Logout</h3></a
+          >
+        </div>
+      </aside>
     </div>
     <!-- Dashbaord End -->
   </body>
