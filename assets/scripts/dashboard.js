@@ -23,4 +23,16 @@ themeToggler.addEventListener('click', () => {
     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 })
 
+// Fill locations in table
+
+Locations.forEach(location => {
+    const tr = document.createElement('tr')
+    const trContent = `
+                    <td>${location.lat}</td>
+                    <td>${location.lon}</td>
+                    <td>${location.precipitation}</td>
+                    <td class="${location.status === 'Risky' ? 'danger' : location.status === 'Safe' ? 'success' : none }">${location.status}</td>`;
+    tr.innerHTML = trContent;
+    document.querySelector('table tbody').appendChild(tr);
+})
 
