@@ -423,37 +423,37 @@ main .recent-locations a {
   border-radius: var(--border-radius-1);
 }
 
-.right .theme-toggler span{
+.right .theme-toggler span {
   font-size: 1.2rem;
-  width:50%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.right .theme-toggler span.active{
+.right .theme-toggler span.active {
   background: var(--color-primary);
   color: white;
   border-radius: var(--border-radius-1);
 }
 
-.right .top .profile{
+.right .top .profile {
   display: flex;
   gap: 2rem;
   text-align: right;
 }
 
 /* Recent Updates */
-.right .recent-updates{
+.right .recent-updates {
   margin-top: 1rem;
 }
 
-.right .recent-updates h2{
+.right .recent-updates h2 {
   margin-bottom: 0.8rem;
 }
 
-.right .recent-updates .updates{
+.right .recent-updates .updates {
   background: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
@@ -461,13 +461,55 @@ main .recent-locations a {
   transition: all 300ms ease;
 }
 
-.right .recent-updates .updates:hover{
-  box-shadow: none;   
+.right .recent-updates .updates:hover {
+  box-shadow: none;
 }
 
-.right .recent-updates .updates .update{
+.right .recent-updates .updates .update {
   display: grid;
   grid-template-columns: 2.6rem auto;
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
+/* === Most Searched Section === */
+.right .top-searches {
+  margin-top: 2rem;
+}
+
+.right .top-searches h2 {
+  margin-bottom: 0.8rem;
+}
+
+.right .top-searches .item {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem var(--card-padding);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.right .top-searches .item:hover {
+  box-shadow: none;
+}
+
+.right .top-searches .item .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0;
+  width: 100%;
+}
+.right .top-searches .item .icon {
+  padding: 0.6rem;
+  color: var(--color-white);
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+}
+
+
