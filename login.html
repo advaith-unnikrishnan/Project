@@ -20,8 +20,10 @@
           placeholder="Password"
         />
         <input type="submit" id="login" name="login" value="Login" />
-        <br><br>
-        <small>Don't have an account? <a href="/signup.html"> Create one</a></small>
+        <br /><br />
+        <small
+          >Don't have an account? <a href="/signup.html"> Create one</a></small
+        >
       </div>
 
       <!-- <div class="right">
@@ -46,10 +48,8 @@
         getAuth,
         signInWithEmailAndPassword,
       } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
+      // Firebase configuration
       const firebaseConfig = {
         apiKey: "AIzaSyCs_Vp6s3jtJp98aWLLj9T8SDH0-PW7uKc",
         authDomain: "finalproject-bf039.firebaseapp.com",
@@ -75,11 +75,11 @@
             const user = userCredential.user;
             // ...
             const date = new Date();
-            update(ref(database , 'users/'+user.uid),{
-                last_login : date
-            })
+            update(ref(database, "users/" + user.uid), {
+              last_login: date,
+            });
 
-            window.location = 'dashboard.html';
+            window.location = "dashboard.html";
           })
           .catch((error) => {
             const errorCode = error.code;

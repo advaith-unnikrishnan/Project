@@ -115,13 +115,20 @@ a {
     font-weight: bold;
     color: var(--secondary-color);
 }
+
+#output{
+  margin: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+}
 /* ==== Safe Location Section ==== */
 .safe-locations{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
-    border: 1px solid black;
 }
 
 .safe-locations > iframe{
