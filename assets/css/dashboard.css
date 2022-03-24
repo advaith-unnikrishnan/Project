@@ -294,11 +294,11 @@ main .insights > div span {
   font-size: 2rem;
 }
 
-main .insights > div.Expenses span {
+main .insights > div.risky span {
   background-color: var(--color-danger);
 }
 
-main .insights > div.income span {
+main .insights > div.safe span {
   background-color: var(--color-success);
 }
 
@@ -340,14 +340,15 @@ main .insights .sales svg circle {
   stroke-dasharray: 200;
 }
 
-main .insights .Expenses svg circle {
-  stroke-dashoffset: 20;
-  stroke-dasharray: 80;
-}
-
-main .insights .income svg circle {
+main .insights .risky svg circle {
   stroke-dashoffset: 35;
   stroke-dasharray: 110;
+}
+
+main .insights .safe svg circle {
+  
+  stroke-dashoffset: 20;
+  stroke-dasharray: 80;
 }
 
 main .insights .progress .number {
