@@ -28,16 +28,22 @@ themeToggler.addEventListener("click", () => {
 for (let i = 0; i < 6; i++) {
   const tr = document.createElement("tr");
   const trContent = `
-                    <td>${Locations[i].lat}</td>
-                    <td>${Locations[i].lon}</td>
-                    <td>${Locations[i].precipitation}</td>
-                    <td class="${
-                      Locations[i].status === "Risky"
+                    <td>${Locations[i].X}</td>
+                    <td>${Locations[i].Y}</td>
+                    <td>${Locations[i].target_2019}</td>
+                     <td class="${
+                     Locations[i].status === "High Risk"
                         ? "danger"
-                        : Locations[i].status === "Safe"
+                        : Locations[i].status === "Risk"
+                        ? "danger"
+                        : Locations[i].status === "Take Precautions"
+                        ? "warning"
+                        :Locations[i].status === "Be on alert"
+                        ? "warning"
+                        :Locations[i].status === "Safe Zone"
                         ? "success"
-                        : none
-                    }">${Locations[i].status}</td>`;
+                        :"none"    
+                     }">${Locations[i].status}</td>`;
   tr.innerHTML = trContent;
   document.querySelector("table tbody").appendChild(tr);
 }
@@ -46,15 +52,21 @@ function showAll() {
   Locations.forEach((location) => {
     const tr = document.createElement("tr");
     const trContent = `
-                        <td>${location.lat}</td>
-                        <td>${location.lon}</td>
-                        <td>${location.precipitation}</td>
+                        <td>${location.X}</td>
+                        <td>${location.Y}</td>
+                        <td>${location.target_2019}</td>
                         <td class="${
-                          location.status === "Risky"
-                            ? "danger"
-                            : location.status === "Safe"
-                            ? "success"
-                            : none
+                          location.status === "High Risk"
+                        ? "danger"
+                        : location.status === "Risk"
+                        ? "danger"
+                        : location.status === "Take Precautions"
+                        ? "warning"
+                        :location.status === "Be on alert"
+                        ? "warning"
+                        :location.status === "Safe Zone"
+                        ? "success"
+                        :"none"    
                         }">${location.status}</td>`;
     tr.innerHTML = trContent;
     document.querySelector("table tbody").appendChild(tr);
