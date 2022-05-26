@@ -41,21 +41,17 @@
     </section>
 
     <section class="input">
-      <select
-        name="location"
-        id="input-location"
-        aria-placeholder="Choose your location"
-      >
-        <option value="">Choose your location</option>        
-        <option value="Manila">Manila</option>
-        <!-- <option value="">Davao City</option>
-        <option value="">Baguio</option>
-        <option value="">Cavite City</option>
-        <option value="">Cebu City</option> -->
-      </select>
-      <button class="search-btn">Search</button>
+      
+      <!-- <form onsubmit="eventHandler()">
+      <input id="lat" type="number" step="any" placeholder="Enter the latitude">
+      <input id="lon" type="number" step="any" placeholder="Enter the longitude">
+      <input type="submit" value="Submit">
+      </form> -->
 
-      <div id="output"></div>
+      <input id="lat" type="number" step="any" placeholder="Enter the latitude">
+      <input id="lon" type="number" step="any" placeholder="Enter the longitude">
+      <button class="search-btn">Submit</button>
+            <div id="output"></div>
     </section>
 
     <section class="safe-locations">
@@ -69,6 +65,7 @@
     </div>
       </section>
     </footer>
+    <script src="locations.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

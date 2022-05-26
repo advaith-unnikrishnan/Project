@@ -100,7 +100,7 @@ a {
   margin: 1rem;
 }
 
-.input > select {
+.input > input {
   border: 1px solid var(--logo-color);
   padding: 1rem;
   border-radius: 1rem;
@@ -119,9 +119,9 @@ a {
 #output {
   margin: 2rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 /* ==== Safe Location Section ==== */
 .safe-locations {
