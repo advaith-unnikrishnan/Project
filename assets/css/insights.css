@@ -239,3 +239,41 @@
       margin-left: 1rem;
   }
   
+
+  /* == Main Section == */
+  main{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+  }
+
+  main h3{
+    text-align: center;
+    margin:2rem auto;
+    font-size: 2rem;
+  }
+
+  .map-container{
+    display: flex;
+    border: 7px #7380ec solid;
+    border-radius: 1rem;
+  }
+
+  .map-container img{
+    max-width: 65%;
+  }
+
+  .insight{
+    max-width: 35%;
+    font-size: 1.75rem;
+    margin: auto 1rem;
+  }
+
+  .insight ol{
+    padding: 0.5rem;
+  }
+  .insight ol li{
+    padding: 1rem;
+    list-style: decimal;
+    text-align: justify;
+  }
