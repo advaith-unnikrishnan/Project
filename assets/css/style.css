@@ -5,9 +5,9 @@
   padding: 0;
   margin: 0;
   --black: #000;
-  --blue: #40A4FE;
+  --blue: #40a4fe;
   --white: #fff;
-  --logo-color:#17CF97;
+  --logo-color: #17cf97;
   --secondary-color: #fdf6ec;
 }
 
@@ -95,28 +95,28 @@ a {
 }
 
 /* ==== Input Section ==== */
-.input{
-    text-align: center;
-    margin: 1rem;
+.input {
+  text-align: center;
+  margin: 1rem;
 }
 
-.input > select{
-    border: 1px solid var(--logo-color);
-    padding: 1rem;
-    border-radius: 1rem;
+.input > select {
+  border: 1px solid var(--logo-color);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
-.input > button{
-    margin: 0rem 1rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--logo-color);
-    font-weight: bold;
-    color: var(--secondary-color);
+.input > button {
+  margin: 0rem 1rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--logo-color);
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
-#output{
+#output {
   margin: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -124,20 +124,77 @@ a {
   font-size: 3rem;
 }
 /* ==== Safe Location Section ==== */
-.safe-locations{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1rem;
+.safe-locations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
 }
 
-.safe-locations > iframe{
-    margin: 1rem;
+.safe-locations > p {
+  font-size: 2rem;
+  margin: 1rem;
 }
+
+.heatmap {
+  position: relative;
+  width: 70%;
+}
+
+.heatmap__img {
+  display: block;
+  width: 100%;
+}
+
+.heatmap__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.heatmap__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.heatmap__overlay--primary {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.heatmap__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.heatmap__overlay:hover {
+  opacity: 1;
+}
+
+.heatmap__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.heatmap__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 /* ==== Footer Section ==== */
-footer{
-    padding: 1rem;
+footer {
+  padding: 1rem;
 }
-footer > h4{
-    text-align: center;
+footer > h4 {
+  text-align: center;
 }
